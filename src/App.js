@@ -8,7 +8,7 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <p>This is ssss App!</p>
+      <p>This is REACT App!</p>
     </div>
   );
 }
