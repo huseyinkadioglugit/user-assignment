@@ -5,7 +5,7 @@ const userInput = (props) => {
 
     return (
         <div>
-            <p>User Input component!</p>
+            <input type="text"/>
         </div>
     )
 

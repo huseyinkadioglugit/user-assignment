@@ -1,11 +1,11 @@
-import { Component } from "react"
 import React from 'react';
 
 const userOutput = (props) => {
 
     return (
         <div>
-            <p>User Output component!</p>
+            <p>First paragraph! from --- {props.username}</p>
+            <p>Second paragraph!! --- {props.username}</p>
         </div>
     )
 
