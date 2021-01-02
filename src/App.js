@@ -16,21 +16,30 @@ class App extends Component {
     ]
   }
 
+nameChangedHandler = (event) => {
+  this.setState({
+    persons: [
+      {name: 'Melisa'}
+    ]
+  })
+}
+
 render(){
   return (
     <div className="App">
       <p>This is REACT App with Components!</p>
       <UserInput
-      
+      username= {this.state.persons[0].username}
+       changed = {this.nameChangedHandler}
       > 
 
 
       </UserInput>
       <UserOutput
-        username= {this.state.persons[0].name}
+        username= {this.state.persons[0].username}
       ></UserOutput>
       <UserOutput
-       username= {this.state.persons[0].name}      
+       username= {this.state.persons[0].username}      
       ></UserOutput>
 
     </div>
