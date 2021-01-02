@@ -11,17 +11,13 @@ class App extends Component {
 
 
   state = {
-    persons : [
-      {username : 'Huseyin'}
-    ]
+    
+    username : 'Huseyin'
+    
   }
 
 nameChangedHandler = (event) => {
-  this.setState({
-    persons: [
-      {name: 'Melisa'}
-    ]
-  })
+  this.setState({username: event.target.value});
 }
 
 render(){
@@ -29,17 +25,17 @@ render(){
     <div className="App">
       <p>This is REACT App with Components!</p>
       <UserInput
-      username= {this.state.persons[0].username}
+      currentName= {this.state.username}
        changed = {this.nameChangedHandler}
       > 
 
 
       </UserInput>
       <UserOutput
-        username= {this.state.persons[0].username}
+        username= {this.state.username}
       ></UserOutput>
       <UserOutput
-       username= {this.state.persons[0].username}      
+       username= {this.state.username}      
       ></UserOutput>
 
     </div>
